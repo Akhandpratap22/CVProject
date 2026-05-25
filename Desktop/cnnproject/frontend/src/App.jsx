@@ -6,7 +6,7 @@ import {
 import MoonGlobe3D from './components/MoonGlobe3D';
 import TerrainViewer3D from './components/TerrainViewer3D';
 
-const API = 'http://localhost:5000';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export default function App() {
   const [activeCraterId, setActiveCraterId] = useState('shackleton');
